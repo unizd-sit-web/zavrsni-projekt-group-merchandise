@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+        <main>
+
+            <div class="album py-5 bg-transparent">
+                <div class="container">
+            
+                  <div class="row">
+                    <div class="col-sm">
+                      <div class="card">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/curry.jfif') }}" alt="Steph Curry" width="200" height="250">
+            
+                        <div class="card-body">
+                          <p class="card-text">Steph Curry</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                            </div>
+                            <small class="text-muted"></small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <div class="card">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/green.jfif') }}" alt="Draymond Green" width="200" height="250">
+            
+                        <div class="card-body">
+                          <p class="card-text">Draymond Green</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                            </div>
+                            <small class="text-muted"></small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <div class="card">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/klay.jfif') }}" alt="Klay Thompson" width="200" height="250">
+            
+                        <div class="card-body">
+                          <p class="card-text">Klay Thompson</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                            </div>
+                            <small class="text-muted"></small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="col-sm">
+                      <div class="card">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/wiggins.jfif') }}" alt="Andrew Wiggins" width="200" height="250">
+            
+                        <div class="card-body">
+                          <p class="card-text">Andrew Wiggins</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                            </div>
+                            <small class="text-muted"></small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="container2">
+                    <iframe class="responsive-iframe" src="https://www.rezultati.com/tim/golden-state-warriors/SxUtXqch/"></iframe>
+                  </div>
+        </main>
+{% endblock %}

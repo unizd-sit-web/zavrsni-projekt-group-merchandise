@@ -1,0 +1,83 @@
+{% extends 'base.html' %}   
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+        <main>
+
+          <div class="album py-5 bg-transparent">
+              <div class="container">
+          
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="card">    <!-- Ode pocinje -->
+                      <img class="card-img-top" src="{{ url_for('static', filename='images/preuzmi.jfif') }}" alt="Trae Young" width="200" height="250">
+          
+                      <div class="card-body" >
+                        <p class="card-text">Trae Young</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted"></small>
+                        </div>
+                      </div>
+                    </div>                 <!-- Ode zavrsava -->
+                  </div>
+                  <div class="col-sm">
+                    <div class="card">
+                      <img class="card-img-top" src="{{ url_for('static', filename='images/bogdanovic.jfif') }}" alt="Bogdan Bogdanović" width="200" height="250">
+          
+                      <div class="card-body">
+                        <p class="card-text">Bogdan Bogdanović</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted"></small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="card">
+                      <img class="card-img-top" src="{{ url_for('static', filename='images/capela.jfif') }}" alt="Clint Capela" width="200" height="250">
+          
+                      <div class="card-body">
+                        <p class="card-text">Clint Capela</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted"></small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-sm">
+                    <div class="card">
+                      <img class="card-img-top" src="{{ url_for('static', filename='images/collins.jfif') }}" alt="John Collins" width="200" height="250">
+          
+                      <div class="card-body">
+                        <p class="card-text">John Collins</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted"></small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br><br>
+
+                <div class="container2">
+                  <iframe class="responsive-iframe" src="https://www.rezultati.com/tim/atlanta-hawks/xAO4gBas/"></iframe>
+                </div>
+              </div>
+          </div>
+        </main>
+{% endblock %}
