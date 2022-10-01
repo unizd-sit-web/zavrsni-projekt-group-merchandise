@@ -10,19 +10,19 @@
           
                 <div class="row">
                   <div class="col-sm">
-                    <div class="card">    <!-- Ode pocinje -->
+                    <div class="card">
                       <img class="card-img-top" src="{{ url_for('static', filename='images/preuzmi.jfif') }}" alt="Trae Young" width="200" height="250">
           
                       <div class="card-body" >
                         <p class="card-text">Trae Young</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                            <button onclick="localStorage.setItem('young', JSON.stringify(products[0].name));alert('Added item to cart!');" type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                           </div>
                           <small class="text-muted"></small>
                         </div>
                       </div>
-                    </div>                 <!-- Ode zavrsava -->
+                    </div>
                   </div>
                   <div class="col-sm">
                     <div class="card">
@@ -32,7 +32,7 @@
                         <p class="card-text">Bogdan Bogdanović</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                            <button onclick="localStorage.setItem('bogdanovic', JSON.stringify(products[1].name));alert('Added item to cart!');" type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                           </div>
                           <small class="text-muted"></small>
                         </div>
@@ -47,7 +47,7 @@
                         <p class="card-text">Clint Capela</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                            <button onclick="localStorage.setItem('capela', JSON.stringify(products[2].name));alert('Added item to cart!');" type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                           </div>
                           <small class="text-muted"></small>
                         </div>
@@ -63,7 +63,7 @@
                         <p class="card-text">John Collins</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                            <button onclick="localStorage.setItem('collins', JSON.stringify(products[3].name));alert('Added item to cart!');" type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                           </div>
                           <small class="text-muted"></small>
                         </div>

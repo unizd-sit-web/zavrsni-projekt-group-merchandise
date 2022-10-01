@@ -1,4 +1,4 @@
-
+import json
 from turtle import title
 from flask import Flask, render_template, redirect, request
 from flask_mail import Mail, Message    # Import
@@ -45,7 +45,7 @@ def team(ime):
         return render_template('lakers.html', title=title)
 
 @app.route('/Shopping Cart')
-def kosarica():
+def shoppingCart():
     title = "Shopping Cart"
     return render_template('kosarica.html', title=title)
 
@@ -59,3 +59,26 @@ def forma():
 
     title = "Thank You For Subscribing"
     return render_template('form.html', title=title), {"Refresh": "10; url=/index.html"}
+
+
+## this should get the array "kosarica" from main.js
+## but for some reason doesn't work
+@app.route('/cartItems/<string:kosarica>', methods=['post'])
+def cartItems(kosarica):
+    kosarica = json.loads(kosarica)
+    print()
+    print(kosarica)
+    print("Data received")
+    print()
+
+    return kosarica
+
+@app.route('/', methods=['post', 'get'])
+def forma2():
+    email_reserve = request.form.get("email_reserve")
+    msg = Message('Your Merchandise reservation', sender=app.config['MAIL_USERNAME'], recipients=[email_reserve])
+    msg.body = "Your reserved items: " ## + kosarica (pop up saying kosarica is not defined)
+    mail.send(msg)
+    
+    title = "Merchandise"
+    return render_template('index.html', title=title)

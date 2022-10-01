@@ -5,9 +5,35 @@
 
 {% block content %}
 
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
+<div class= "cartContainer">
+
+    <h2>Shopping cart</h2>
+    <br>
+    <div class="cartText" style="display: inline-block;">
+        <p style="float: left;">Name<div style="float: right;">Quantity</div></p>
+        
+    </div>
+    <div class="products"> <!-- render products here -->
+
+
+
+    </div>
+</div>
+
+
+<!--           email and reservation         -->
+<div class="d-flex justify-content-center bg-info bg-opacity-50">
+    <form action="/" method="post">
+      <div>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" name='email_reserve' value="{{ email_reserve }}">
+      </div>
+
+      <div>
+        <button onclick="cartToListToFlask();cartClear()" type="submit" class="btn btn-secondary">Reserve</button>
+      </div>
+
+    </form>
+</div>
 
 
 {% endblock %}
